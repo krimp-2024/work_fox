@@ -10,9 +10,9 @@ PROCEDURE saveLog(logMessage as Character, pathToLog as Character, deleteOn as B
   * Path to Log directory
   IF EMPTY(pathToLog)    
     logDir = "Log" 
-  ELSE
-    IF isRegExpPatternFound(pathToLog, "^(?:\.{2})?(?:\/\.{2})*(\/[a-zA-Z0-9]+)+$")  
-      logdir = pathToLog + "Log"
+  ELSE 
+    IF isRegExpPatternFound(pathToLog, "^\.(?:\.{2})?(?:\/\.{2})*(\/[a-zA-Z0-9]+)+$")  
+      logdir = pathToLog +"/"+"Log"
     ELSE
       logDir = "Log"
     ENDIF  
@@ -75,6 +75,8 @@ PROCEDURE saveLog(logMessage as Character, pathToLog as Character, deleteOn as B
    llResult = oRE.test(lcString)
  
   RETURN llResult
+  
+ENDFUNC  
 
                 
 
