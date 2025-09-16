@@ -3,13 +3,3 @@ test repo
 ===============
 text 1
 test 2
-<<<<<<< HEAD
-----
-test3
----
-test 4
-=======
-=======
----
-test 4
->>>>>>> 85eb3f4 (commit 3)
