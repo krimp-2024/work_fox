@@ -2,3 +2,5 @@
 text from master
 ---
 text from branch_1
+----
+text from master 2
